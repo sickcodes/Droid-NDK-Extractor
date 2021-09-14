@@ -1,18 +1,3 @@
-# Droid-NDK-Extractor
-Android NDK Extractor - Extract ARM native bridge translations for use in any Android derivative.
-
-System Requirements:
-
-```
-p7zip
-binwalk
-git
-```
-
-`./android-extract-ndk.sh`
-
-```bash
-
 #!/bin/bash
 # Author:       sickcodes
 # Contact:      https://twitter.com/sickcodes
@@ -60,5 +45,3 @@ stat native-bridge.tar
 echo "${PWD}/native-bridge.tar"
 
 # move native-bridge.tar somewhere, and remove the ./working folder as it is no longer required.
-
-```
