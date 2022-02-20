@@ -40,7 +40,13 @@ find system \( -name 'libndk_translation*' -o -name '*arm*' -o -name 'ndk_transl
 
 pwd
 
-stat native-bridge.tar
+stat native-bridge.tar || exit 1
+
+mv native-bridge.tar ..
+
+rm -rf ./working
+
+stat native-bridge.tar || exit 1
 
 echo "${PWD}/native-bridge.tar"
 
